@@ -150,7 +150,7 @@ h2 {
   overflow: auto;
 }
 
-.modal-content {
+.modal_content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,22 +178,17 @@ h2 {
 
 #frame_painting {
   max-height: 60vh;
-  height: 200px;
-  width: 200px;
-  padding: 30px;
+  max-width: 100%;
+  padding: 0; /* Supprimer le padding pour éviter les espaces blancs autour de l'image */
   margin: 30px;
-  background-repeat: no-repeat;
-  background-color: #ddc;
+  background-color: #ddc; /* Peut être conservé si nécessaire */
   border: solid 1vmin #eee;
-  border-bottom-color: #fff;
-  border-left-color: #eee;
   border-radius: 2px;
-  border-right-color: #eee;
-  border-top-color: #ddd;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
-    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: flex;
+  justify-content: center; /* Centrer l'image */
+  align-items: center; /* Centrer verticalement l'image */
 }
 
 .ctrl_form {
