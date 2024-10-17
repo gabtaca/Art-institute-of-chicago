@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="./js/main.js" defer></script>
+    <title>Art Institute of Chicago</title>
+</head>
+<body>
+    <header class="ctrl_header">
+      <a href="index.html"><img src="./images/logo.svg" alt="logo de l'art institute of Chicago"></a>
+      <button id="btn_favs"><p>💙</p></button>
+      <div class="div_main">
+        <form class="ctrl_form">
+          <label for="input_name"></label>
+          <div class="btn_input">
+            <input
+              type="text"
+              id="input_name"
+              placeholder="Searching for a masterpiece?"/>
+            <button type="submit" class="btn_search">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </div>
+        </form>
+        <p class="result"></p>
+      </div>
+    </header>
+    
+    <div class="bg_institut">
+      <div id="artModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <div id="frame_painting"></div>
+          <div class="art_infos"></div> 
+        </div>
+      </div>
+
+      <div class="pager">
+        <button class="btn_previous" type="button">Previous</button>
+        <p class="page">Page:</p>
+        <button class="btn_next" type="button">Next</button>
+      </div>
+
+      <div class="art_list"> 
+        <div id="loadingGif" style="display: none;">
+          <img src="https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!bw700" alt="Chargement...">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
